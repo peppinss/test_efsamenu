@@ -5,97 +5,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Canteen Menu</title>
     <style>
-        /* Modern-looking style using 2017-safe code */
-        body {
-            background-color: #FFFFFF;
-            color: #111111;
-            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-            margin: 0;
+        /* Force the body to be white and remove margins */
+        html, body {
+            background-color: #FFFFFF !important; 
+            margin: 0; 
             padding: 0;
-            -webkit-text-size-adjust: 100%;
+            width: 100%;
         }
-
+        
         .dcm-screen {
-            display: block;
+            background-color: #FFFFFF;
             padding: 40px;
+            min-height: 100vh;
         }
 
-        .dcm-header {
-            margin-bottom: 40px;
-        }
-
-        /* The Yellow Accent Bar from the original */
+        /* Yellow Accent - Hardcoded to ensure it shows */
         .dcm-accent {
-            background-color: #FFEE58;
-            height: 8px;
-            width: 80px;
-            margin-bottom: 15px;
+            background: #FFEE58 !important;
+            background-color: #FFEE58 !important;
+            height: 10px;
+            width: 100px;
+            margin-bottom: 20px;
+            display: block;
         }
 
         h1 {
-            font-size: 42px;
-            font-weight: bold;
+            color: #111111 !important;
+            font-family: Arial, sans-serif;
+            font-size: 48px;
             margin: 0;
-            letter-spacing: -1px;
             text-transform: uppercase;
         }
 
-        /* Table styled to look like the original list */
         .dcm-table {
             width: 100%;
             border-collapse: collapse;
-            margin-top: 20px;
+            margin-top: 30px;
         }
 
+        /* Row colors and borders */
         .dcm-table tr {
-            border-bottom: 1px solid #E0E0E0;
-        }
-
-        .dcm-table tr:last-child {
-            border-bottom: none;
+            border-bottom: 2px solid #EEEEEE;
         }
 
         .dcm-item {
-            padding: 20px 0;
-            font-size: 24px;
-            font-weight: 500;
-            width: 75%;
+            padding: 25px 0;
+            font-size: 26px;
+            color: #000000;
+            font-weight: bold;
+            font-family: Arial, sans-serif;
         }
 
         .dcm-price {
-            padding: 20px 0;
-            font-size: 22px;
+            padding: 25px 0;
+            font-size: 24px;
             text-align: right;
-            color: #686868;
-            white-space: nowrap;
-        }
-
-        /* Auto-refresh every 30 minutes */
-        meta[http-equiv="refresh"] {
-            content: "1800";
+            color: #666666 !important; /* The grey price color */
+            font-family: Arial, sans-serif;
         }
     </style>
 </head>
-<body>
-    <div class="dcm-screen">
-        <header class="dcm-header">
-            <div class="dcm-accent"></div>
-            <h1>CANTEEN MENU – 11 FEBBRAIO</h1>
+<body style="background-color: #FFFFFF;">
+    <div class="dcm-screen" style="background-color: #FFFFFF;">
+        
+        <div class="dcm-accent" style="background-color: #FFEE58; height: 10px; width: 100px; margin-bottom: 20px;"></div>
+        
+        <header>
+            <h1 style="color: #111111;">CANTEEN MENU – 11 FEBBRAIO</h1>
         </header>
         
-        <main class="dcm-content">
+        <main>
             <table class="dcm-table">
                 <tbody>
-                    <tr><td class="dcm-item">Rice</td><td class="dcm-price">10,00 €</td></tr>
-                    <tr><td class="dcm-item">Vegetable minestrone</td><td class="dcm-price">3,15 €</td></tr>
-                    <tr><td class="dcm-item">Pasta with spinach and ricotta</td><td class="dcm-price">7,00 €</td></tr>
-                    <tr><td class="dcm-item">Couscous</td><td class="dcm-price">5,75 €</td></tr>
-                    <tr><td class="dcm-item">Chicken curry</td><td class="dcm-price">7,05 €</td></tr>
-                    <tr><td class="dcm-item">CHEF SIGNATURE DISH: guanciale with polenta</td><td class="dcm-price">12,00 €</td></tr>
-                    <tr><td class="dcm-item">Salad with tuna, eggs and mozzarella</td><td class="dcm-price">6,80 €</td></tr>
-                    <tr><td class="dcm-item">Salad (side dish)</td><td class="dcm-price">3,15 €</td></tr>
-                    <tr><td class="dcm-item">Peas</td><td class="dcm-price">2,50 €</td></tr>
-                    <tr><td class="dcm-item">Cauliflower</td><td class="dcm-price">2,50 €</td></tr>
+                    <tr><td class="dcm-item">Rice</td><td class="dcm-price" style="color: #666666;">10,00 €</td></tr>
+                    <tr><td class="dcm-item">Vegetable minestrone</td><td class="dcm-price" style="color: #666666;">3,15 €</td></tr>
+                    <tr><td class="dcm-item">Pasta with spinach and ricotta</td><td class="dcm-price" style="color: #666666;">7,00 €</td></tr>
+                    <tr><td class="dcm-item">Couscous</td><td class="dcm-price" style="color: #666666;">5,75 €</td></tr>
+                    <tr><td class="dcm-item">Chicken curry</td><td class="dcm-price" style="color: #666666;">7,05 €</td></tr>
+                    <tr><td class="dcm-item">CHEF SIGNATURE DISH: guanciale with polenta</td><td class="dcm-price" style="color: #666666;">12,00 €</td></tr>
+                    <tr><td class="dcm-item">Salad with tuna, eggs and mozzarella</td><td class="dcm-price" style="color: #666666;">6,80 €</td></tr>
+                    <tr><td class="dcm-item">Salad (side dish)</td><td class="dcm-price" style="color: #666666;">3,15 €</td></tr>
+                    <tr><td class="dcm-item">Peas</td><td class="dcm-price" style="color: #666666;">2,50 €</td></tr>
+                    <tr><td class="dcm-item">Cauliflower</td><td class="dcm-price" style="color: #666666;">2,50 €</td></tr>
                 </tbody>
             </table>
         </main>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Canteen Menu Compatibility</title>
+    <style>
+        /* FALLBACKS FOR OLD WEBKIT */
+        body {
+            background-color: #ffffff;
+            color: #111111;
+            font-family: sans-serif; /* Simplified font */
+            margin: 0;
+            padding: 20px;
+        }
+        .dcm-screen {
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .dcm-header {
+            border-bottom: 4px solid #FFEE58;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+        }
+        h1 {
+            font-size: 28px;
+            text-transform: uppercase;
+        }
+        /* OLD SCHOOL TABLE STYLES (No Grid/Flex Gap) */
+        .dcm-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .dcm-table tr {
+            border-bottom: 1px solid #eeeeee;
+        }
+        .dcm-item {
+            padding: 15px 0;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .dcm-price {
+            text-align: right;
+            font-weight: normal;
+            color: #686868;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="dcm-screen">
+        <header class="dcm-header">
+            <h1>CANTEEN MENU – 11 FEBBRAIO</h1>
+        </header>
+        <main class="dcm-content">
+            <table class="dcm-table">
+                <tbody>
+                    <tr><td class="dcm-item">Rice</td><td class="dcm-price">10,00 €</td></tr>
+                    <tr><td class="dcm-item">Vegetable minestrone</td><td class="dcm-price">3,15 €</td></tr>
+                    <tr><td class="dcm-item">Pasta with spinach and ricotta</td><td class="dcm-price">7,00 €</td></tr>
+                    <tr><td class="dcm-item">Couscous</td><td class="dcm-price">5,75 €</td></tr>
+                    <tr><td class="dcm-item">Chicken curry</td><td class="dcm-price">7,05 €</td></tr>
+                    <tr><td class="dcm-item">CHEF SIGNATURE DISH: guanciale with polenta</td><td class="dcm-price">12,00 €</td></tr>
+                    <tr><td class="dcm-item">Salad with tuna, eggs and mozzarella cheese</td><td class="dcm-price">6,80 €</td></tr>
+                    <tr><td class="dcm-item">Salad (side dish)</td><td class="dcm-price">3,15 €</td></tr>
+                    <tr><td class="dcm-item">Peas</td><td class="dcm-price">2,50 €</td></tr>
+                    <tr><td class="dcm-item">Cauliflower</td><td class="dcm-price">2,50 €</td></tr>
+                </tbody>
+            </table>
+        </main>
+    </div>
+</body>
+</html>

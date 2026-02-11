@@ -2,56 +2,87 @@
 <html lang="it">
 <head>
     <meta charset="UTF-8">
-    <title>Canteen Menu Compatibility</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canteen Menu</title>
     <style>
-        /* FALLBACKS FOR OLD WEBKIT */
+        /* Modern-looking style using 2017-safe code */
         body {
-            background-color: #ffffff;
+            background-color: #FFFFFF;
             color: #111111;
-            font-family: sans-serif; /* Simplified font */
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
             margin: 0;
-            padding: 20px;
+            padding: 0;
+            -webkit-text-size-adjust: 100%;
         }
+
         .dcm-screen {
-            width: 100%;
-            max-width: 800px;
-            margin: 0 auto;
+            display: block;
+            padding: 40px;
         }
+
         .dcm-header {
-            border-bottom: 4px solid #FFEE58;
-            margin-bottom: 20px;
-            padding-bottom: 10px;
+            margin-bottom: 40px;
         }
+
+        /* The Yellow Accent Bar from the original */
+        .dcm-accent {
+            background-color: #FFEE58;
+            height: 8px;
+            width: 80px;
+            margin-bottom: 15px;
+        }
+
         h1 {
-            font-size: 28px;
+            font-size: 42px;
+            font-weight: bold;
+            margin: 0;
+            letter-spacing: -1px;
             text-transform: uppercase;
         }
-        /* OLD SCHOOL TABLE STYLES (No Grid/Flex Gap) */
+
+        /* Table styled to look like the original list */
         .dcm-table {
             width: 100%;
             border-collapse: collapse;
+            margin-top: 20px;
         }
+
         .dcm-table tr {
-            border-bottom: 1px solid #eeeeee;
+            border-bottom: 1px solid #E0E0E0;
         }
+
+        .dcm-table tr:last-child {
+            border-bottom: none;
+        }
+
         .dcm-item {
-            padding: 15px 0;
-            font-size: 20px;
-            font-weight: bold;
+            padding: 20px 0;
+            font-size: 24px;
+            font-weight: 500;
+            width: 75%;
         }
+
         .dcm-price {
+            padding: 20px 0;
+            font-size: 22px;
             text-align: right;
-            font-weight: normal;
             color: #686868;
-            font-size: 18px;
+            white-space: nowrap;
+        }
+
+        /* Auto-refresh every 30 minutes */
+        meta[http-equiv="refresh"] {
+            content: "1800";
         }
     </style>
 </head>
 <body>
     <div class="dcm-screen">
         <header class="dcm-header">
+            <div class="dcm-accent"></div>
             <h1>CANTEEN MENU – 11 FEBBRAIO</h1>
         </header>
+        
         <main class="dcm-content">
             <table class="dcm-table">
                 <tbody>
@@ -61,7 +92,7 @@
                     <tr><td class="dcm-item">Couscous</td><td class="dcm-price">5,75 €</td></tr>
                     <tr><td class="dcm-item">Chicken curry</td><td class="dcm-price">7,05 €</td></tr>
                     <tr><td class="dcm-item">CHEF SIGNATURE DISH: guanciale with polenta</td><td class="dcm-price">12,00 €</td></tr>
-                    <tr><td class="dcm-item">Salad with tuna, eggs and mozzarella cheese</td><td class="dcm-price">6,80 €</td></tr>
+                    <tr><td class="dcm-item">Salad with tuna, eggs and mozzarella</td><td class="dcm-price">6,80 €</td></tr>
                     <tr><td class="dcm-item">Salad (side dish)</td><td class="dcm-price">3,15 €</td></tr>
                     <tr><td class="dcm-item">Peas</td><td class="dcm-price">2,50 €</td></tr>
                     <tr><td class="dcm-item">Cauliflower</td><td class="dcm-price">2,50 €</td></tr>

@@ -1,105 +1,49 @@
 <!DOCTYPE html>
-<html lang="it">
+<html>
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <title>Canteen Menu</title>
-    <style>
-        /* Base styles for the layout */
-        html, body {
-            background-color: #FFFFFF !important;
-            margin: 0;
-            padding: 0;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-        .container {
-            padding: 50px;
-            max-width: 900px;
-            margin: 0 auto;
-        }
-        /* The specific Yellow Bar from the theme */
-        .yellow-accent {
-            background-color: #FFEE58 !important;
-            height: 12px;
-            width: 120px;
-            margin-bottom: 25px;
-        }
-        h1 {
-            color: #111111 !important;
-            font-size: 52px;
-            font-weight: 800;
-            text-transform: uppercase;
-            margin: 0 0 50px 0;
-            letter-spacing: -2px;
-        }
-        /* Table to replace the broken CSS Grid */
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-        /* Zebra striping for readability */
-        tr {
-            border-bottom: 1px solid #E0E0E0;
-        }
-        tr:nth-child(even) {
-            background-color: #F9FAFB;
-        }
-        td {
-            padding: 22px 10px;
-            vertical-align: middle;
-        }
-        .item-name {
-            font-size: 26px;
-            font-weight: bold;
-            color: #000000;
-        }
-        .price {
-            font-size: 24px;
-            text-align: right;
-            color: #686868 !important; /* Accent 4 color from theme */
-            font-weight: normal;
-        }
-    </style>
 </head>
-<body style="background-color: #FFFFFF;">
-    <div class="container">
-        <div class="yellow-accent" style="background-color: #FFEE58;"></div>
-        
-        <header>
-            <h1 style="color: #111111;">CANTEEN MENU – 11 FEBBRAIO</h1>
-        </header>
+<body style="background-color: #ffffff; margin: 0; padding: 0; font-family: sans-serif;">
 
-        <table>
+    <div style="background-color: #1a2b44; padding: 40px 60px; color: #ffffff;">
+        <div style="background-color: #fccf4d; height: 8px; width: 80px; margin-bottom: 20px;"></div>
+        
+        <h1 style="font-size: 64px; margin: 0; font-weight: 900; letter-spacing: -2px; text-transform: uppercase;">
+            CANTEEN MENU – 11 FEBBRAIO
+        </h1>
+    </div>
+
+    <div style="padding: 40px 60px;">
+        <table style="width: 100%; border-collapse: collapse; background-color: #e6f3f0;">
             <tbody>
-                <tr>
-                    <td class="item-name">Rice</td>
-                    <td class="price" style="color: #686868;">10,00 €</td>
+                <tr style="border-bottom: 2px solid #33a88e;">
+                    <td style="padding: 20px; font-size: 24px; color: #444444;">Rice</td>
+                    <td style="padding: 20px; font-size: 24px; text-align: right; font-weight: bold;">10,00 €</td>
                 </tr>
-                <tr>
-                    <td class="item-name">Vegetable minestrone</td>
-                    <td class="price" style="color: #686868;">3,15 €</td>
+                <tr style="border-bottom: 2px solid #33a88e;">
+                    <td style="padding: 20px; font-size: 24px; color: #444444;">Vegetable minestrone</td>
+                    <td style="padding: 20px; font-size: 24px; text-align: right; font-weight: bold;">3,15 €</td>
                 </tr>
-                <tr>
-                    <td class="item-name">Pasta with spinach and ricotta</td>
-                    <td class="price" style="color: #686868;">7,00 €</td>
+                <tr style="border-bottom: 2px solid #33a88e;">
+                    <td style="padding: 20px; font-size: 24px; color: #444444;">Pasta with spinach and ricotta</td>
+                    <td style="padding: 20px; font-size: 24px; text-align: right; font-weight: bold;">7,00 €</td>
                 </tr>
-                <tr>
-                    <td class="item-name">Couscous</td>
-                    <td class="price" style="color: #686868;">5,75 €</td>
+                <tr style="border-bottom: 2px solid #33a88e;">
+                    <td style="padding: 20px; font-size: 24px; color: #444444;">Couscous</td>
+                    <td style="padding: 20px; font-size: 24px; text-align: right; font-weight: bold;">5,75 €</td>
                 </tr>
-                <tr>
-                    <td class="item-name">Chicken curry</td>
-                    <td class="price" style="color: #686868;">7,05 €</td>
+                <tr style="border-bottom: 2px solid #33a88e;">
+                    <td style="padding: 20px; font-size: 24px; color: #444444;">Chicken curry</td>
+                    <td style="padding: 20px; font-size: 24px; text-align: right; font-weight: bold;">7,05 €</td>
                 </tr>
-                <tr>
-                    <td class="item-name">CHEF SIGNATURE DISH: guanciale with polenta</td>
-                    <td class="price" style="color: #686868;">12,00 €</td>
-                </tr>
-                <tr style="background-color: #F9FAFB;">
-                    <td class="item-name">Salad with tuna, eggs and mozzarella</td>
-                    <td class="price" style="color: #686868;">6,80 €</td>
+                <tr style="border-bottom: 2px solid #33a88e;">
+                    <td style="padding: 20px; font-size: 24px; color: #444444;">CHEF SIGNATURE: guanciale with polenta</td>
+                    <td style="padding: 20px; font-size: 24px; text-align: right; font-weight: bold;">12,00 €</td>
                 </tr>
             </tbody>
         </table>
     </div>
+
 </body>
 </html>
